@@ -33,7 +33,8 @@ async function fetchCricketVideosData() {
     }
   }
 
-  fetchCricketVideosData()
+  
+  setInterval(fetchCricketVideosData, 10000);
 
     module.exports = {
         fetchCricketVideosData

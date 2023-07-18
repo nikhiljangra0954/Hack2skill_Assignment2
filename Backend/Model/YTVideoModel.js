@@ -11,6 +11,9 @@ const YtVideoSchema = new mongoose.Schema({
     versionKey : false
 })
 
+// indexing the publish time and title for better retrival of data from mongobd
+YtVideoSchema.index({ publishTime: -1 }); 
+YtVideoSchema.index({ title: 'text', description: 'text' }); 
 
 const YtVideoModel = mongoose.model("YtVideosData" , YtVideoSchema)
 

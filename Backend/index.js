@@ -9,7 +9,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-fetchCricketVideosData()
+// fetchCricketVideosData()
 app.get("/" , (req, res) => {
     res.send("Welcome to the Hacke2Skill")
 })
