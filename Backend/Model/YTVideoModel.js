@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 const YtVideoSchema = new mongoose.Schema({
     title: { type: String, required: true },
-    description: { type: String , required: true},
+    description: { type: String },
     publishTime: { type: Date ,required: true},
     thumbnail: { type: String , required : true },
 },{
